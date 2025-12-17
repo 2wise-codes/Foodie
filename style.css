@@ -1,0 +1,264 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --theme-orange: rgb(255, 94, 0);
+}
+
+header {
+    background: linear-gradient(rgba(0, 0, 0, 0.123), rgba(0, 0, 0, 0.548)), url(assets/burgerimg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: whitesmoke;
+}
+
+.nav-toggler {
+    outline: none;
+    border: none;
+}
+
+.navbar-brand span {
+    color: var(--theme-orange);
+}
+
+.navbar-brand i {
+    font-size: 1.3rem;
+}
+
+.navbar-brand {
+    letter-spacing: -1px;
+}
+
+nav ul a {
+    color: rgba(245, 245, 245, 0.822) !important;
+    transition: all .6s !important;
+}
+
+nav ul a:hover {
+    color: rgb(255, 145, 0) !important;
+}
+
+.hero-btn-container .btn {
+    border: 1px solid rgb(255, 94, 0);
+    color: rgba(255, 207, 179, 0.945);
+    transition: all .5s;
+}
+
+.hero-btn-container .btn:hover {
+    background-color: rgba(255, 121, 43, 0.925);
+    box-shadow: 1px 1px 1px 1px rgba(255, 110, 43, 0.925);
+    transform: scale(1.03);
+}
+
+
+.sec-one h1 {
+    font-size: 4rem;
+}
+
+.sec-one p {
+    font-size: 1rem;
+}
+
+.sec-reviews {
+    padding: 0rem 0 4rem 0;
+}
+
+.sec-reviews img {
+    width: 16%;
+    border: 3px solid rgba(145, 42, 1, 0.767);
+}
+
+
+.sec-reviews .card {
+    border: none;
+    background-color: rgba(255, 230, 0, 0.26);
+}
+
+.sec-reviews .card .card-text {
+    font-size: .9rem;
+    color: rgba(17, 8, 0, 0.822);
+}
+
+.sec-reviews .customer-name {
+    color: rgb(255, 136, 0);
+}
+
+.sec-offers {
+    padding: 6rem 0;
+    background: url(assets/wood\ texture.jpg);
+}
+
+.sec-offers .container {
+    border-radius: 20px;
+    background-color: rgb(255, 237, 216);
+}
+
+.sec-offers img {
+    transition: all .3s;
+    border: 2px solid rgba(255, 0, 0, 0.411);
+    width: 90%;
+}
+
+.sec-offers img:hover {
+    box-shadow: 1px 0px 4px 4px rgb(170, 79, 19);
+    transform: scale(1.02);
+    border: none;
+}
+
+.sec-offers p {
+    color: rgb(255, 136, 0);
+    font-size: 2rem;
+}
+
+.sec-offers p span {
+    text-decoration: line-through;
+    color: rgba(0, 0, 0, 0.884);
+    font-size: 1.4rem;
+    font-weight: lighter;
+}
+
+.dish-gallery {
+    background: linear-gradient(rgb(245, 245, 245), rgba(219, 219, 219, 0.877));
+}
+
+.dish-gallery p {
+    font-size: .8rem;
+}
+
+.dish-gallery .dish-price {
+    color: rgb(11, 158, 202);
+    font-size: 1.6rem;
+}
+
+.dish-gallery .dish-text {
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+}
+
+.dish-gallery img {
+    border-radius: 15px;
+    transition: all .3s;
+}
+
+.dish-gallery img:hover {
+    transform: scale(1.03);
+}
+
+
+
+.contact h3 {
+    letter-spacing: -1px;
+}
+
+.contact {
+    color: rgba(32, 32, 51, 0.897);
+}
+
+.contact .address p {
+    line-height: 25px;
+    margin: 0;
+}
+
+.contact .address-icons i {
+    color: orange;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.contact button {
+    background-color: orange;
+    color: whitesmoke;
+    transition: all .3s;
+}
+
+.contact button:hover {
+    background-color: rgb(255, 115, 0);
+    color: whitesmoke;
+    transform: scale(1.03);
+}
+
+.contact input {
+    border: 3px solid rgba(255, 153, 0, 0.658);
+}
+
+footer {
+    background: linear-gradient(rgb(20, 20, 20), rgb(53, 53, 53));
+    color: rgba(245, 245, 245, 0.918);
+}
+
+
+/* --------------------------------------- */
+
+
+@media (max-width:780px) {
+    .sec-one h1 {
+        font-size: 3.5rem;
+    }
+
+    .sec-one p {
+        font-size: .8rem;
+    }
+
+    .contact p {
+        font-size: .85rem;
+    }
+}
+
+@media (max-width:500px) {
+    .sec-one h1 {
+        font-size: 2.7rem;
+    }
+
+}
+
+
+@media (max-width:536px) {
+
+    .dish-gallery .dish-price {
+        font-size: 1.2rem;
+    }
+
+    .dish-gallery .dish-text {
+        font-size: 1.1rem;
+    }
+
+
+    .sec-offers p span {
+        font-size: 1.2rem;
+    }
+
+    .sec-offers p {
+        font-size: 1.5rem;
+    }
+
+
+}
+
+
+
+@media (min-width:576px) {
+
+
+    .sec-reviews img {
+        width: 40%;
+    }
+}
+
+@media (max-width:612px) {
+
+
+    .sec-reviews img {
+        width: 30%;
+    }
+
+
+}
